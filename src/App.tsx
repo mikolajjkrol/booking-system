@@ -1,6 +1,4 @@
-
 function App() {
-
   return (
     <div className="app dark">
       <nav className="navbar">
@@ -12,7 +10,25 @@ function App() {
         </div>
         <div className="projects">
           <div className="content">
-            Your booking systems
+            <div className="title">
+              Your booking systems
+            </div>
+
+            <div className="project">
+              <h2>first project</h2>
+            </div>
+            <div className="project">
+              <h2>first project</h2>
+            </div>
+            <div className="project">
+              <h2>first project</h2>
+            </div>
+            <div className="project">
+              <h2>first project</h2>
+            </div>
+            <div className="project">
+              <h2>first project</h2>
+            </div>
           </div>
         </div>
       </div>
