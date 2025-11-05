@@ -1,0 +1,14 @@
+.dark {
+  --primary:hsl(0, 0%, 9%);
+  --secondary: hsl(0, 0%, 20%);
+  --font-primary:hsl(0, 0%, 89%);
+  --font-secondary: hsl(0, 0%, 81%);
+  --border: hsl(0, 0%, 20%);
+}
+.light {
+  --primary:hsl(0, 0%, 95%);
+  --secondary: hsl(0, 0%, 80%);
+  --font-primary:hsl(0, 0%, 10%);
+  --font-secondary: hsl(0, 0%, 21%);
+  --border: hsl(0, 0%, 80%);
+}
