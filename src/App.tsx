@@ -10,8 +10,8 @@ function App() {
         <div className="sidebar">
 
         </div>
-        <div className="content">
-            
+        <div className="projects">
+            <div className="content">
             <div className="header">
               <div className="title">
                 Your booking systems
@@ -23,7 +23,10 @@ function App() {
               </div>
             </div>
             <div className="projects-list">
-
+              <button className="booking-system">
+                Jakiś projekt
+              </button>
+            </div>
           
           </div>
         </div>
