@@ -1,37 +1,21 @@
-import { icons } from "./assets/icons"
+import { icons } from './assets/icons'
 
 function App() {
   return (
-    <div className="app dark">
-      <nav className="navbar">
-        
+  <div className="app dark">
+    <nav className="navbar">
+        YOUR SPACE
       </nav>
       <div className="container">
         <div className="sidebar">
-
+          {icons.home}
+          {icons.menu}
+          {icons.rocket}
+          {icons.settings}
         </div>
-        <div className="projects">
-            <div className="content">
-            <div className="header">
-              <div className="title">
-                Your booking systems
-              </div>
-              <div className="buttons">
-                <button className="view">{icons.viewCozy}</button>
-                <button className="view">{icons.viewAgenda}</button>
-                <button>{icons.add} Add new</button>
-              </div>
-            </div>
-            <div className="projects-list">
-              <button className="booking-system">
-                Jakiś projekt
-              </button>
-            </div>
-          
+
           </div>
         </div>
-      </div>
-    </div>
   )
 }
 

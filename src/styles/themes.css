@@ -1,5 +1,8 @@
+:root {
+  --font: "archivo-semi-condensed", sans-serif;
+}
 .dark {
-  --primary:hsl(0, 0%, 9%);
+  --primary:hsl(0, 0%, 4%);
   --secondary: hsl(0, 0%, 20%);
   --font-primary:hsl(0, 0%, 89%);
   --font-secondary: hsl(0, 0%, 81%);
