@@ -1,21 +1,18 @@
 import { icons } from './assets/icons'
+import Navbar from './components/ui/Navbar'
+import Sidebar from './components/ui/Sidebar'
 
 function App() {
   return (
   <div className="app dark">
-    <nav className="navbar">
-        YOUR SPACE
-      </nav>
+      <Navbar />
       <div className="container">
-        <div className="sidebar">
-          {icons.home}
-          {icons.menu}
-          {icons.rocket}
-          {icons.settings}
-        </div>
+        <Sidebar />
+        
+        
 
-          </div>
-        </div>
+    </div>
+  </div>
   )
 }
 

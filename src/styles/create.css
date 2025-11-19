@@ -1,0 +1,98 @@
+.create {
+    font-size: 1.2rem;
+    width: 40%;
+    min-height: 60%;
+    background-color: var(--hover);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 0.2px solid var(--secondary);
+} .create .item {
+    width: calc(100% - 40px);
+    padding: 0 20px;
+    border-bottom: 0.2px solid var(--secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+} .create .item:last-child {
+    border-bottom: none;
+    margin-bottom: 10px;
+} .d {
+    border-bottom: none !important;
+}
+.create input {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 5px;
+    height: 32px;
+    outline: none;
+    background-color: hsl(0, 0%, 8%);
+    color: var(--font-secondary);
+    border: 0.2px solid var(--secondary);
+    border-radius: 4px;
+    font: var(--font);
+    font-size: 0.999rem !important;
+} .days {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    border: 0.2px solid var(--secondary);
+    border-radius: 4px;
+} .day{
+    height: 32px;
+    width: 20%;
+    padding: 5px;
+    font-size: 0.9rem !important;
+    box-sizing: border-box;
+    outline: none;
+    background-color: var(--thirdary);
+    color: var(--font-secondary);
+    border: none;
+    border-right: 0.2px solid var(--secondary);
+    font: var(--font);
+} .day:first-child {
+    border-radius: 4px 0 0 4px;
+} .day:last-child {
+    border-radius: 0 4px 4px 0;
+    border-right: none;
+} .day.selected {
+    background-color: var(--primary);
+    color: var(--font-primary);
+    border-color: var(--secondary);
+    text-decoration:  solid underline;
+} .timer {
+    width: 50%;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    background-color: var(--thirdary);
+    border: 0.2px solid var(--secondary);
+    border-radius: 4px;
+} .timer input {
+    border: none;
+    text-align: center;
+} .create .buttons {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    align-items: center;
+    width: 50%;
+} button.submit {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    height: 24px;
+    outline: none;
+    background-color: hsl(0, 0%, 8%);
+    color: var(--font-secondary);
+    border: 0.2px solid var(--secondary);
+    border-radius: 4px;
+    font: var(--font);
+    font-size: 0.8rem !important;
+    background-color: var(--colour);
+    border-color: var(--colour-b);
+} button.cancel {
+    background-color: var(--thirdary);
+    border-color: var(--secondary);
+}

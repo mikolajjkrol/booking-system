@@ -1,27 +1,82 @@
 nav {
-    border-bottom: 0.2px solid var(--border);
+    border-bottom: 0.2px solid var(--secondary);
     display: flex;
     align-items: center;
     padding: 15px 0 15px 60px;
 }
-.container {
-    
-    display: flex;
-    flex-direction: row;
-}
 
 .sidebar {
+    position: absolute;
+    left: 0;
+    top: 0; /* if you want below navbar use top: var(--navbar-h); */
     width: var(--sidebar-w);
-    height: calc(100dvh - var(--navbar-h) - 70px);
-    border-right: 0.2px solid var(--border);
+    height: calc(100dvh - var(--navbar-h) - 10px);
     display: flex;
     flex-direction: column;
+    padding: 0 0 0 5px;
+    box-sizing: border-box;
+    border-right: 0.2px solid var(--secondary);
+    background: var(--primary);
+    transition: width 220ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms ease-out;
+    transition: padding-left 220ms cubic-bezier(.2,.9,.2,1);
+    transition: 0.2s;
+    will-change: width;
+}
+
+/* Item structure */
+.sidebar .item {
+    display: flex;
     align-items: center;
-    padding: 30px 0;
-    gap: 50px;
-} .sidebar svg {
-    fill: var(--font-secondary);
+    gap: 14px;
+    width: 100%;
+    padding: 4px 8px;
+    border-radius: 6px;
+    color: var(--font-secondary);
+    text-decoration: none;
+    cursor: pointer;
+    background: transparent;
+} .sidebar .item:first-child {
+    margin-top: 10px;
+}
+
+/* Icon sizing */
+.sidebar .icon,
+.sidebar svg {
     width: 24px;
     height: 24px;
-    cursor: pointer;
+    flex-shrink: 0;
+    fill: var(--font-secondary);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Label hidden when collapsed */
+.sidebar .label {
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(-8px);
+    transition: opacity 180ms ease, transform 180ms ease;
+    pointer-events: none;
+    display: inline-block;
+    color: var(--font-secondary);
+}
+
+.sidebar:hover { 
+    width: var(--sidebar-expanded-w, 200px);
+    padding-left: 15px;
+}
+
+.sidebar:hover .label{
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+.sidebar .item:hover,
+.sidebar .item:focus {
+    background: rgba(0,0,0,0.04);
+    outline: none;
+}
+@media (prefers-reduced-motion: reduce) {
+    .sidebar, .sidebar .label, .sidebar .item { transition: none !important; }
 }

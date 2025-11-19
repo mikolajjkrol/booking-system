@@ -1,17 +1,21 @@
 :root {
   --font: "archivo-semi-condensed", sans-serif;
+  --colour: #5f0c2c;
+  --colour-b: #530624;
 }
 .dark {
   --primary:hsl(0, 0%, 4%);
+  --hover: hsl(0, 0%, 5%);
+  --thirdary: hsl(0, 0%, 8%);
   --secondary: hsl(0, 0%, 20%);
   --font-primary:hsl(0, 0%, 89%);
   --font-secondary: hsl(0, 0%, 81%);
-  --border: hsl(0, 0%, 20%);
+  
 }
 .light {
   --primary:hsl(0, 0%, 95%);
-  --secondary: hsl(0, 0%, 80%);
+  --secondary: hsl(0, 0%, 70%);
   --font-primary:hsl(0, 0%, 10%);
   --font-secondary: hsl(0, 0%, 21%);
-  --border: hsl(0, 0%, 80%);
+  --hover: hsl(0, 0%, 98%);
 }

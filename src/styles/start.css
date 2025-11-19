@@ -1,0 +1,14 @@
+.add {
+  width: 70%;
+  height: 50%;
+  border-radius: 20px;
+  background-color: var(--primary);
+  border: 1px dashed var(--secondary);
+  cursor: pointer;
+  color: var(--font-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-style: italic;
+}

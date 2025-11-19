@@ -10,6 +10,14 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font);
+} button {
+  font-family: var(--font);
+  font-size: 1.2rem;
+  color: var(--font-secondary);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+} button:hover {
+  background-color: var(--hover);
 }
 .app {
   width: 100%;
@@ -19,3 +27,21 @@ body {
   background-color: var(--primary);
   color: var(--font-secondary);
 }
+.container {
+  padding-left: var(--sidebar-w);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+
+main {
+  width: 100%;
+  height: calc(60dvh - var(--navbar-h) - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+} 
