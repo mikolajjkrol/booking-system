@@ -1,0 +1,45 @@
+STYLES
+
+.row1 {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+} .row2 {
+    height: calc(60% - 1px);
+    width: 100%;
+        display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar, .list {
+    background-color: var(--secondary);
+    border: 0.2px solid var(--thirdary);
+    height: 60%;
+    width: 40%;
+    border-radius: 6px;
+} .table {
+    height: 100%;
+    background-color: var(--secondary);
+    border: 0.2px solid var(--thirdary);
+    width: calc(80% + 50px);
+    border-radius: 6px;
+}
+
+STRUCTURE
+
+ <main>
+              <div class="row1">
+                  <div class="calendar"></div>
+                  <div class="list"></div>
+              </div>
+              <div class="row2">
+                  <div class="table"></div>
+              </div>
+</main>
