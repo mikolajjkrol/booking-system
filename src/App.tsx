@@ -1,6 +1,6 @@
 import Navbar from './components/ui/Navbar'
 import Sidebar from './components/ui/Sidebar'
-import Dashboard from './components/Dashboard'
+import Dashboard from './pages/Dashboard'
 
 function App() {
   return (

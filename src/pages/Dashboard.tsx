@@ -1,9 +1,9 @@
 import '../styles/dashboard.css'
-import Calendar from "./blocks/Calendar";
-import ServicesList from "./blocks/ServicesList";
-import ReservationsList from "./blocks/ReservationsList";
-import Statistics from "./blocks/Statistics";
-import EditButton from "./blocks/EditButton";
+import Calendar from "../components/blocks/Calendar";
+import ServicesList from "../components/blocks/ServicesList";
+import ReservationsList from "../components/blocks/ReservationsList";
+import Statistics from "../components/blocks/Statistics";
+import EditButton from "../components/blocks/EditButton";
 
 export default function Dashboard() {
   return (
