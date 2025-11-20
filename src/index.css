@@ -18,7 +18,7 @@ body {
   transition: background-color 0.3s ease;
 } button:hover {
   background-color: var(--hover);
-}
+} h2 {margin: none; padding: none; font-size: 1.8rem;}
 .app {
   width: 100%;
   height: 100dvh;
@@ -34,14 +34,11 @@ body {
   flex-direction: row;
 }
 
-
 main {
   width: 100%;
-  height: calc(60dvh - var(--navbar-h) - 70px);
+  height: calc(100dvh - var(--navbar-h) - 10px);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  gap: 20px;
 } 

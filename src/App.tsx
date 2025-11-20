@@ -1,6 +1,6 @@
-import { icons } from './assets/icons'
 import Navbar from './components/ui/Navbar'
 import Sidebar from './components/ui/Sidebar'
+import Dashboard from './components/Dashboard'
 
 function App() {
   return (
@@ -8,8 +8,10 @@ function App() {
       <Navbar />
       <div className="container">
         <Sidebar />
-        
-        
+                
+      
+        <Dashboard />
+                
 
     </div>
   </div>

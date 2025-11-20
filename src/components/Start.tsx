@@ -1,4 +1,6 @@
+import '../styles/start.css'
 import { icons } from "../assets/icons"
+
 export default function Start() {
     return (
         <main>

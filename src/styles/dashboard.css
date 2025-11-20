@@ -1,0 +1,149 @@
+span {
+    font-size: 1.8rem;
+    font-weight: 900;
+    display:'flex'; 
+    justify-content:'space-between';
+    align-items:'center';
+    width:'100%';
+    position: relative;
+}
+.row1 {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+} .row2 {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 50px;
+} .row3 {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.calendar, .list {
+    background-color: var(--thirdary);
+    border: 0.2px solid var(--secondary);
+    width: 35%;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px 25px 30px;
+    box-sizing: border-box;
+    height: 100%;
+}.calendar {
+    width: 65%;
+}
+
+.table {
+    height: 100%;
+    width: 60%;
+    background-color: var(--thirdary);
+    border: 0.2px solid var(--secondary);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px 25px 30px;
+    box-sizing: border-box;
+} .even {
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 4px;
+}
+
+.statistics {
+    background-color: var(--thirdary);
+    border: 0.2px solid var(--secondary);
+    width: 100%;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px 25px 30px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.edit-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 8px;
+}
+
+.statistics-panel {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    gap: 32px;
+    padding: 12px;
+    background: rgba(255,255,255,0.02);
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.03);
+    margin-top: 10px;
+}
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.stat-value {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.stat-label {
+    font-size: 0.95em;
+    opacity: 0.7;
+}
+
+.calendar .cal,
+.calendar .calendar-widget {
+    max-height: 60vh; /* cap the visible calendar height to viewport fraction */
+    overflow: auto;
+}
+
+.table .reservations {
+    background: rgba(255,255,255,0.02);
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.03);
+}
+
+
+/* Reservations grid styles (div-based table) */
+.reservations { width: calc(100%); height: 100%; margin-top: 12px; }
+.reservations-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 140px 100px 1.6fr;
+    gap: 12px 18px;
+    align-items: center;
+    padding: 6px 8px;
+    box-sizing: border-box;
+}
+.reservations-header { font-weight: 700; color: var(--font-secondary); opacity: 0.95; border-bottom: 1px solid rgba(0,0,0,0.04); margin: 10px 0;}
+.reservations-row { border-bottom: 1px dashed rgba(0,0,0,0.03); }
+.reservations-row .col { padding: 8px 0; }
+.reservations .col.services { color: var(--font-secondary); opacity: 0.95; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+@media (max-width: 900px) {
+  .reservations-grid { grid-template-columns: 1fr 1fr; }
+  .reservations-grid .col.date,
+  .reservations-grid .col.time,
+  .reservations-grid .col.services { grid-column: 1 / -1; }
+}
