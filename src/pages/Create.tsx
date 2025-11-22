@@ -1,11 +1,12 @@
+import '../styles/create.css'
 import DaysSwitch from '../components/blocks/DaysSwitch'
 import { useState } from 'react'
-
+import { Link } from 'react-router-dom';
 export default function Create() {
     const [workdays, setWorkdays] = useState(["Mon", "Tue"]);
 
     return (
-        <main className="main-content">
+        <main className="main-content up">
           <div className="create">
             <div className="item">
               <p><b>Create a system</b><br /> This is where you create your booking system by providing some info.</p>
@@ -32,8 +33,8 @@ export default function Create() {
             <div className="item">
               <p></p>
               <div className="buttons">
-                <button className="submit cancel">Cancel</button>
-                <button className="submit">Create</button>
+                <Link to={'..'}><button className="submit cancel">Cancel</button></Link>
+                <Link to={'/dashboard'}><button className="submit">Create</button></Link>
               </div>
             </div>
           </div>

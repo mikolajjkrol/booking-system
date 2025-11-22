@@ -1,7 +1,6 @@
 .create {
     font-size: 1.2rem;
-    width: 40%;
-    min-height: 60%;
+    min-width: 40%;
     background-color: var(--hover);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -12,7 +11,8 @@
     border-bottom: 0.2px solid var(--secondary);
     display: flex;
     justify-content: space-between;
-    align-items: center
+    gap: 40px;
+    align-items: center;
 } .create .item:last-child {
     border-bottom: none;
     margin-bottom: 10px;
